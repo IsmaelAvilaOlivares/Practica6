@@ -1,0 +1,41 @@
+
+.ColorTransparente { /* seleccionamos una clase*/
+  width: 420px; /* establece un ancho*/
+  background: transparent;/* establece un fondo de tras de los elementos sera visible */
+  background: rgba(138, 221, 45, 0); /*se le asigan un color */
+}
+body, html {  /*Estos son los elementos de nivel superior en una página web. */
+    height: 100%; /*se extiendan hasta el fondo de la ventana del navegador */
+    margin: 0; /*para que elimine cualquier margen */
+    padding: 0; /*elimina cualquier relleno de los navegadores  */
+}
+ .video-container { /*mandams a traer a la clase */
+    position: fixed; /*hace referencia al pocicionamiento */
+    top: 0; /*posicion del lado superior*/
+    left: 0; /*posicion del lado inferior*/
+    width: 100%; /*lo ancho que cubrira*/
+    height: 100%;/*lo largo que cubrira de l apantalla*/
+    overflow: hidden; /*ocualta el contenido que se salga de el contenedor*/
+    z-index: -1; /*establece orden de suprepocicionamiento  */
+}
+
+
+
+#video-background {  /*mandamos a traer un elemento*/
+    position: absolute; /*establece la pocicion absoluta de cada elemento*/
+    top: 0; /*pociciona el borde supuerior de la parte izquierda*/
+    left: 0; /* establece un pocicionamiento*/
+    width: 100%; /* establece una medida de ancho*/
+    height: 100%; /*establece la altura */
+    object-fit: cover; /* como se ajusta un elemento multimedia */
+}
+.row { /*selecciona todos los elementos que contenga la calse*/
+  width: 600px; /*establece los elementos de los elementos */
+  background: transparent;/* establece el fondo de los elementos*/
+  border: 2px solid rgba(255, 255, 255, 0.2); /*establece un borde */
+  backdrop-filter: blur(20px); /* aplica un borde de desenfoque */
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2); /*aplica una sombra */
+  color: #fff; /*establece un color a los elementos */
+  border-radius: 10px; /*crea un borde a cada elemento en las esquinas*/
+  padding: 30px 40px; /*establece un relleno interior */
+}
